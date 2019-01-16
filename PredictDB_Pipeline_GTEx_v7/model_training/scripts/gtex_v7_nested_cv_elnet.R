@@ -60,7 +60,8 @@ get_cis_genotype <- function(gt_df, snp_annot, coords, cis_window) {
   snp_info <- snp_annot %>% filter((pos >= (coords[1] - cis_window) & !is.na(rsid_dbSNP150)) & (pos <= (coords[2] + cis_window)))
   if (nrow(snp_info) == 0)
     return(NA)
-  cis_gt <- gt_df %>% select(one_of(intersect(snp_info$varID, colnames(gt_df))))
+  #cis_gt <- gt_df %>% select(one_of(intersect(snp_info$varID, colnames(gt_df))))
+  cis_gt <- gt_df[, intersect(snp_info$varID, colnames(gt_df))] #this is faster than previous method
   column_labels <- colnames(cis_gt)
   row_labels <- rownames(cis_gt)
   # Convert cis_gt to a matrix for glmnet
