@@ -1,0 +1,22 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon May 14 13:08:24 CDT 2018 1526321304
+PBS: Job ID:		176064.qsched03.quest.it.northwestern.edu
+PBS: Username:		yzu280
+PBS: Group:		yzu280
+PBS: Executing queue:     genomics
+PBS: Job name:		peerexon
+PBS: Account:		b1042
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/176064.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5210
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5210/aux//176064.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /projects/b1047/zhong/Hepatocyte_project/Yilin/PrediXcan/PredictDB_Pipeline_GTEx_v7/model_training/scripts
+----------------------------------------
+PBS: End PBS Prologue Mon May 14 13:08:24 CDT 2018 1526321304
+[1] "21"
+[1] "../../../data/input/annotations/snp_annotation/annotation3.txt"

@@ -1,0 +1,34 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon May 14 13:05:59 CDT 2018 1526321159
+PBS: Job ID:		175833.qsched03.quest.it.northwestern.edu
+PBS: Username:		yzu280
+PBS: Group:		yzu280
+PBS: Executing queue:     genomics
+PBS: Job name:		peerexon
+PBS: Account:		b1042
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/175833.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5056
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5056/aux//175833.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /projects/b1047/zhong/Hepatocyte_project/Yilin/PrediXcan/PredictDB_Pipeline_GTEx_v7/model_training/scripts
+----------------------------------------
+PBS: End PBS Prologue Mon May 14 13:05:59 CDT 2018 1526321159
+[1] "2"
+[1] "../../../data/input/annotations/snp_annotation/annotation3.txt"
+Error in scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  : 
+  line 1 did not have 8 elements
+Calls: main ... get_filtered_snp_annot -> %>% -> eval -> eval -> read.table -> scan
+Execution halted
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Mon May 14 13:20:04 CDT 2018 1526322004
+JobID: 175833.qsched03.quest.it.northwestern.edu
+Session ID:			27069
+Resources Used:			cput=00:13:58,vmem=742104kb,walltime=00:14:00,mem=280984kb,energy_used=0
+Job exit value:			1
+----------------------------------------

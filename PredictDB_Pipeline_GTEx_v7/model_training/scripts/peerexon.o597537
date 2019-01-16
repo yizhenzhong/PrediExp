@@ -1,0 +1,181 @@
+----------------------------------------
+PBS: Begin PBS Prologue Wed Jun 13 12:40:08 CDT 2018 1528911608
+PBS: Job ID:		597537.qsched03.quest.it.northwestern.edu
+PBS: Username:		yzu280
+PBS: Group:		yzu280
+PBS: Executing queue:     genomics
+PBS: Job name:		peerexon
+PBS: Account:		b1042
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/597537.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5151
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5151/aux//597537.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /projects/b1047/zhong/Hepatocyte_project/Yilin/PrediXcan/PredictDB_Pipeline_GTEx_v7/model_training/scripts
+----------------------------------------
+PBS: End PBS Prologue Wed Jun 13 12:40:08 CDT 2018 1528911608
+[1] "21"
+[1] "../../../data/input/annotations/snp_annotation/snp_annotation.chr21.txt"
+1 / 151 
+2 / 151 
+3 / 151 
+4 / 151 
+5 / 151 
+6 / 151 
+7 / 151 
+8 / 151 
+9 / 151 
+10 / 151 
+11 / 151 
+12 / 151 
+13 / 151 
+14 / 151 
+15 / 151 
+16 / 151 
+17 / 151 
+18 / 151 
+19 / 151 
+20 / 151 
+21 / 151 
+22 / 151 
+23 / 151 
+24 / 151 
+25 / 151 
+26 / 151 
+27 / 151 
+28 / 151 
+29 / 151 
+30 / 151 
+31 / 151 
+32 / 151 
+33 / 151 
+34 / 151 
+35 / 151 
+36 / 151 
+37 / 151 
+38 / 151 
+39 / 151 
+40 / 151 
+41 / 151 
+42 / 151 
+43 / 151 
+44 / 151 
+45 / 151 
+46 / 151 
+47 / 151 
+48 / 151 
+49 / 151 
+50 / 151 
+51 / 151 
+52 / 151 
+53 / 151 
+54 / 151 
+55 / 151 
+56 / 151 
+57 / 151 
+58 / 151 
+59 / 151 
+60 / 151 
+61 / 151 
+62 / 151 
+63 / 151 
+64 / 151 
+65 / 151 
+66 / 151 
+67 / 151 
+68 / 151 
+69 / 151 
+70 / 151 
+71 / 151 
+72 / 151 
+73 / 151 
+74 / 151 
+75 / 151 
+76 / 151 
+77 / 151 
+78 / 151 
+79 / 151 
+80 / 151 
+81 / 151 
+82 / 151 
+83 / 151 
+84 / 151 
+85 / 151 
+86 / 151 
+87 / 151 
+88 / 151 
+89 / 151 
+90 / 151 
+91 / 151 
+92 / 151 
+93 / 151 
+94 / 151 
+95 / 151 
+96 / 151 
+97 / 151 
+98 / 151 
+99 / 151 
+100 / 151 
+101 / 151 
+102 / 151 
+103 / 151 
+104 / 151 
+105 / 151 
+106 / 151 
+107 / 151 
+108 / 151 
+109 / 151 
+110 / 151 
+111 / 151 
+112 / 151 
+113 / 151 
+114 / 151 
+115 / 151 
+116 / 151 
+117 / 151 
+118 / 151 
+119 / 151 
+120 / 151 
+121 / 151 
+122 / 151 
+123 / 151 
+124 / 151 
+125 / 151 
+126 / 151 
+127 / 151 
+128 / 151 
+129 / 151 
+130 / 151 
+131 / 151 
+132 / 151 
+133 / 151 
+134 / 151 
+135 / 151 
+136 / 151 
+137 / 151 
+138 / 151 
+139 / 151 
+140 / 151 
+141 / 151 
+142 / 151 
+143 / 151 
+144 / 151 
+145 / 151 
+146 / 151 
+147 / 151 
+148 / 151 
+149 / 151 
+150 / 151 
+151 / 151 
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Wed Jun 13 13:02:46 CDT 2018 1528912966
+JobID: 597537.qsched03.quest.it.northwestern.edu
+Session ID:			13733
+Resources Used:			cput=00:22:30,vmem=888652kb,walltime=00:22:33,mem=426564kb,energy_used=0
+Job exit value:			0
+----------------------------------------

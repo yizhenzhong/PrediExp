@@ -1,0 +1,31 @@
+----------------------------------------
+PBS: Begin PBS Prologue Thu Dec 27 16:16:59 CST 2018 1545949019
+PBS: Job ID:		2757356.qsched03.quest.it.northwestern.edu
+PBS: Username:		yzu280
+PBS: Group:		yzu280
+PBS: Executing queue:     genomics
+PBS: Job name:		dexseq_peer
+PBS: Account:		b1042
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/2757356.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5032
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5032/aux//2757356.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /projects/b1047/zhong/Hepatocyte_project/Yilin/PrediXcan/scripts
+----------------------------------------
+PBS: End PBS Prologue Thu Dec 27 16:17:00 CST 2018 1545949020
+getting snp dictionary
+37114456
+writting new output
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Thu Dec 27 16:18:22 CST 2018 1545949102
+JobID: 2757356.qsched03.quest.it.northwestern.edu
+Session ID:			499
+Resources Used:			cput=00:01:16,vmem=4502616kb,walltime=00:01:18,mem=4147560kb,energy_used=0
+Job exit value:			0
+----------------------------------------
