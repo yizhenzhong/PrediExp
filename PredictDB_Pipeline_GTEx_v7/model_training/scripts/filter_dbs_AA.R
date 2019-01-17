@@ -1,13 +1,12 @@
-
-
-#setwd("R:/Basic_Sciences/Pharm/Perera_Lab/Yizhen/Hepatocyte_project/Yilin/PrediXcan/PredictDB_Pipeline_GTEx_v7/model_training/scripts")
 library(dplyr)
 library(RSQLite)
 "%&%" <- function(a,b) paste(a,b,sep='')
+argv <- commandArgs(trailingOnly=T)
+prefix <- argv[1]
 driver <- dbDriver("SQLite")
 
-unfiltered_db <- "../dbs/AA_hepatocyte_rpkm.db"
-filtered_db <- "../dbs/AA_hepatocyte_rpkm_signif.db"
+unfiltered_db <-'../dbs/' %&% prefix %&% '.db' 
+filtered_db <- '../dbs/' %&% prefix %&% 'filtered.db' 
 in_conn <- dbConnect(driver, unfiltered_db)
 out_conn <- dbConnect(driver, filtered_db)
 model_summaries <- dbGetQuery(in_conn, 'select * from model_summaries where zscore_pval < 0.05 and rho_avg > 0.1')
@@ -17,6 +16,7 @@ model_summaries$pred.perf.qval <- NA
 dbWriteTable(out_conn, 'extra', model_summaries, overwrite=TRUE)
 construction <- dbGetQuery(in_conn, 'select * from construction')
 dbWriteTable(out_conn, 'construction', construction, overwrite=TRUE)
+print(dbReadTable(out_conn, "construction"))
 sample_info <- dbGetQuery(in_conn, 'select * from sample_info')
 dbWriteTable(out_conn, 'sample_info', sample_info, overwrite=TRUE)
 weights <- dbGetQuery(in_conn, 'select * from weights')
@@ -28,8 +28,3 @@ dbGetQuery(out_conn, "CREATE INDEX weights_rsid_gene ON weights (rsid, gene)")
 dbGetQuery(out_conn, "CREATE INDEX gene_model_summary ON extra (gene)")
 
 
-##############################
-#index <- which(model_summaries$zscore_pval < 0.05)
-#index2 <- which(model_summaries$rho_avg > 0.1)
-
-#length(intersect(index, index2))
