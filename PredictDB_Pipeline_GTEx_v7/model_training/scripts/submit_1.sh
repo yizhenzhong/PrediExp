@@ -1,6 +1,6 @@
 #!/bin/bash
 #MSUB -A b1042
-#MSUB -l walltime=48:00:00
+#MSUB -l walltime=10:00:00
 #MSUB -l nodes=1:ppn=1
 #MSUB -j oe
 #MSUB -q genomics
@@ -15,7 +15,7 @@ module load shapeit
 module load plink
 module load vcftools
 module load python
-module load R
+module load R/3.5.1
 
 Rscript AA_tiss_chrom_training_new_genotype.R $MOAB_JOBARRAYINDEX
 

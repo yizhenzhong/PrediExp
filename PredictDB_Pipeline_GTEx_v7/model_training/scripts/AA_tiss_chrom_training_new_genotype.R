@@ -9,7 +9,7 @@ gene_annot_file <- "../../../data/intermediate/annotations/gene_annotation/genco
 genotype_file <- "../../../data/input/genotypes/genotype_filter.chr"%&% chrom %&% ".txt"
 expression_file <- "../../../data/intermediate/expression_phenotypes/condition1_exp.txt"
 covariates_file <- "../../../data/intermediate/expression_phenotypes/condition1_cov.txt"
-prefix <- "filtered_nested_cv"
+prefix <- "filtered_nested_cv_LOOCV"
 print(chrom)
 print(snp_annot_file)
 main(snp_annot_file, gene_annot_file, genotype_file, expression_file, covariates_file, as.numeric(chrom), prefix, null_testing=FALSE)

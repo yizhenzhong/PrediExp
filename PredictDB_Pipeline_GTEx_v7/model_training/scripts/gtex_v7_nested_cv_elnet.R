@@ -169,7 +169,7 @@ do_covariance <- function(gene_id, cis_gt, rsids, varIDs) {
 
 
 main <- function(snp_annot_file, gene_annot_file, genotype_file, expression_file,
-                 covariates_file, chrom, prefix, maf=0.01, n_folds=10, n_train_test_folds=5,
+                 covariates_file, chrom, prefix, maf=0.01, n_folds=60, n_train_test_folds=5,
                  seed=NA, cis_window=1e6, alpha=0.5, null_testing=FALSE) {
   gene_annot <- get_gene_annotation(gene_annot_file, chrom)
   expr_df <- get_gene_expression(expression_file, gene_annot)
