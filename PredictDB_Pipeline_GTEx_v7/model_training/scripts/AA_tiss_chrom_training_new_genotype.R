@@ -12,6 +12,6 @@ covariates_file <- "../../../data/intermediate/expression_phenotypes/condition1_
 prefix <- "filtered_nested_cv_LOOCV"
 print(chrom)
 print(snp_annot_file)
-main(snp_annot_file, gene_annot_file, genotype_file, expression_file, covariates_file, as.numeric(chrom), prefix, null_testing=FALSE)
+main(snp_annot_file, gene_annot_file, genotype_file, expression_file, covariates_file, as.numeric(chrom), prefix, null_testing=FALSE, seed=01182019)
 
 
